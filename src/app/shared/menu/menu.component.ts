@@ -11,28 +11,31 @@ export class MenuComponent {
 
   constructor() {
       this.items = [
-          {
-              label: 'File',
-              items: [{
-                      label: 'New', 
-                      icon: 'pi pi-fw pi-plus',
-                      items: [
-                          {label: 'Project'},
-                          {label: 'Other'},
-                      ]
-                  },
-                  {label: 'Open'},
-                  {label: 'Quit'}
-              ]
-          },
-          {
-              label: 'Edit',
-              icon: 'pi pi-fw pi-pencil',
-              items: [
-                  {label: 'Delete', icon: 'pi pi-fw pi-trash'},
-                  {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
-              ]
-          }
+        {
+          label: 'Pipes de angular',
+          icon: 'pi pi-desktop',
+          items: [
+            {
+              label: 'Textos y Fechas',
+              icon: 'pi pi-align-left',
+              routerLink: '/'
+            },
+            {
+              label: 'Numbers',
+              icon: 'pi pi-dollar',
+              routerLink: 'numbers'
+            },
+            {
+              label: 'No Commons',
+              icon: 'pi pi-globe',
+              routerLink: 'no-commons'
+            },
+          ]
+        },
+        {
+          label: 'Custon Pipes',
+          icon: 'pi pi-cog'
+        }
       ];
   }
 }
